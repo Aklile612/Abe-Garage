@@ -11,8 +11,13 @@ import three from "../../assets/3.png"
 import four from "../../assets/4.png"
 import five from "../../assets/5.png"
 import six from "../../assets/6.png"
-import radar from "../../assets/radar.png"
+import seven from "../../assets/7.png"
+import eight from "../../assets/8.png"
+import nine from "../../assets/9.png"
+import ten from "../../assets/10.png"
 
+import radar from "../../assets/radar.png"
+import oldies from "../../assets/oldies.png"
 const Home = () => {
   return (
     <>
@@ -169,9 +174,9 @@ const Home = () => {
 
 
         {/* why choose us */}
-        <div className='h-[500px]'>
+        <div className='h-[500px] flex gap-16'>
           <div className='pl-[190px] pt-[60px]'>
-            <div className=' flex gap-4'>
+            <div className=' flex gap-4 font-bold text-blue-950'>
               <span className='text-3xl'>Why Choose Us</span>
               <div className='border-red-600 border-b-2 w-10'></div>
               
@@ -179,8 +184,59 @@ const Home = () => {
             <div className='mt-6 text-sm text-gray-600'>
               <span className='pt-7'>Bring to the table win-win surviaval stratagies to insure proactive domination. <br />At the end of the day,going forward, a new normal that has evolved from <br /> generation heading towards. </span>
             </div>
+            <div className='pt-7'>
+              <div className='flex gap-5'>
+                <img src={seven} alt="icons" />
+                <span className='pt-3 text-xl font-bold text-blue-900'>Certified Expert Mechanics</span>
+              </div>
+              <div className='border-gray-400 border-b-[1px] pt-3 w-[420px]'></div>
+              <div className='flex gap-5'>
+                <img src={eight} alt="icons " className='pt-0.5' />
+                <span className='pt-3  text-xl font-bold text-blue-900'>Fast and Quality Srvices</span>
+              </div>
+              <div className='border-gray-400 border-b-[1px] pt-3 w-[420px]'></div>
+              <div className='flex gap-5'>
+                <img src={nine} alt="icons" />
+                <span className='pt-3 text-xl font-bold text-blue-900'>Best Price in Town</span>
+              </div>
+              <div className='border-gray-400 border-b-[1px] pt-3 w-[420px]'></div>
+              <div className='flex gap-5'>
+                <img src={ten} alt="icons" />
+                <span className='pt-3 text-xl font-bold text-blue-900'>Awarded Workshop</span>
+              </div>
+              
+            </div>
           </div>
-          <div></div>
+          <div>
+            <div className='pt-[60px]'>
+              <div className='flex gap-4'>
+               <span className='text-3xl font-bold text-blue-950'>Additional services</span>
+               <div className='border-red-600 border-b-2 w-10'></div>
+              </div>
+              <div className='flex pt-7 '>
+                <div>
+                  <img src={oldies} alt=" cars " />
+                </div>
+                <div className='pl-10 text-sm text-gray-500 '>
+                  <ul className='list-disc '>
+                    <li >General Auto Repair & Maintenance </li>
+                    <li>Transmission Repair & Replacement </li>
+                    <li>Tire Repair and Replacement </li>
+                    <li>State Emissions Inspection </li>
+                    <li>Break Job / Break Services </li>
+                    <li>Electrical Diagnostics </li>
+                    <li>Fuel System Repairs </li>
+                    
+                    <li>Starting and Charging Repair </li>
+                    <li>Steering and Suspension Work </li>
+                    <li>Emission Repair Facility </li>
+                    <li>Wheel Alignment </li>
+                    <li>Computer Diagaonstic Testing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
