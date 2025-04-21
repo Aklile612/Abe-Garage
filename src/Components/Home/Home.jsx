@@ -5,7 +5,13 @@ import engine from "../../assets/home-engine.jpg"
 import left from "../../assets/about-us.png"
 import right from "../../assets/about-us1.png"
 import { Link } from "react-router-dom";
-
+import one from "../../assets/1.png"
+import two from "../../assets/2.png"
+import three from "../../assets/3.png"
+import four from "../../assets/4.png"
+import five from "../../assets/5.png"
+import six from "../../assets/6.png"
+import radar from "../../assets/radar.png"
 
 const Home = () => {
   return (
@@ -51,7 +57,7 @@ const Home = () => {
 
 
         {/* our service */}
-        <div className='bg-[#756b6b2c] w-full h-[600px] my-9 '>
+        <div className='bg-[#756b6b2c] w-full h-[700px] my-9 '>
             <div className='ml-60 pt-25 flex gap-3'>
               <h2 className='text-3xl font-bold text-blue-950'>Our Services</h2>
               <div className='border-red-600 border-b-2 w-7 '></div>
@@ -60,23 +66,83 @@ const Home = () => {
               <span className='text-sm text-gray-500'>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </span>
             </div>
             <div className='ml-60 pt-7 grid grid-rows-2 grid-cols-3 gap-5 max-w-[920px] '>
-              <div className='w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
-
+              <div className='group hover:scale-110 hover:border-blue-700 hover:border-b-2 transition-all w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
+                <div className='flex flex-col pt-7 pl-4'>
+                  <span className='text-xs text-blue-950'>SERVICE AND REPAIRS </span>
+                  <span className='font-bold text-blue-950'>Performance Upgrade </span>
+                </div>
+                <div>
+                  <div className='pt-10 flex gap-28'>
+                    <span className='text-xs pl-5 text-red-600' >READ MORE +</span>
+                    <img src={one} alt="images" className='-mt-6' />
+                  </div>
+                </div>
+                
               </div>
-              <div className='w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
-
+              <div className='group hover:scale-110 hover:border-blue-700 hover:border-b-2 transition-all w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
+                <div className='flex flex-col pt-7 pl-4'>
+                  <span className='text-xs text-blue-950'>SERVICE AND REPAIRS </span>
+                  <span className='font-bold text-blue-950'>Transmission Services  </span>
+                </div>
+                <div>
+                  <div className='pt-10 flex gap-28'>
+                    <span className='text-xs pl-5 text-red-600' >READ MORE +</span>
+                    <img src={two} alt="images" className='-mt-6' />
+                  </div>
+                </div>
+                
               </div>
-              <div className='w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
-
+              <div className='group hover:scale-110 hover:border-blue-700 hover:border-b-2 transition-all w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
+                <div className='flex flex-col pt-7 pl-4'>
+                  <span className='text-xs text-blue-950'>SERVICE AND REPAIRS </span>
+                  <span className='font-bold text-blue-950'>Break Repair & Service  </span>
+                </div>
+                <div>
+                  <div className='pt-10 flex gap-28'>
+                    <span className='text-xs pl-5 text-red-600' >READ MORE +</span>
+                    <img src={three} alt="images" className='-mt-6' />
+                  </div>
+                </div>
+                
               </div>
-              <div className='w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
-
+              <div className='group hover:scale-110 hover:border-blue-700 hover:border-b-2 transition-all w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
+                <div className='flex flex-col pt-7 pl-4'>
+                  <span className='text-xs text-blue-950'>SERVICE AND REPAIRS </span>
+                  <span className='font-bold text-blue-950'>Engine Service & Repair  </span>
+                </div>
+                <div>
+                  <div className='pt-10 flex gap-28'>
+                    <span className='text-xs pl-5 text-red-600' >READ MORE +</span>
+                    <img src={four} alt="images" className='-mt-6' />
+                  </div>
+                </div>
+                
               </div>
-              <div className='w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
-
+              <div className='group hover:scale-110 hover:border-blue-700 hover:border-b-2 transition-all w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
+                <div className='flex flex-col pt-7 pl-4'>
+                  <span className='text-xs text-blue-950'>SERVICE AND REPAIRS </span>
+                  <span className='font-bold text-blue-950'>Tyre & Wheels  </span>
+                </div>
+                <div>
+                  <div className='pt-10 flex gap-28'>
+                    <span className='text-xs pl-5 text-red-600' >READ MORE +</span>
+                    <img src={five} alt="images" className='-mt-6' />
+                  </div>
+                </div>
+                
               </div>
-              <div className='w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
-
+              <div className='group hover:scale-110 hover:border-blue-700 hover:border-b-2 transition-all w-[280px] h-[150px] bg-white border-b-2 border-red-700'>
+                <div className='flex flex-col pt-7 pl-4'>
+                  <span className='text-xs text-blue-950'>SERVICE AND REPAIRS </span>
+                  <span className='font-bold text-blue-950'>Denting & Painting  </span>
+                </div>
+                <div>
+                  <div className='pt-10 flex gap-28'>
+                    <span className='text-xs pl-5 text-red-600' >READ MORE +</span>
+                    <img src={six} alt="images" className='-mt-6' />
+                  </div>
+                </div>
+                
               </div>
 
             </div>
@@ -85,6 +151,37 @@ const Home = () => {
 
         </div>
 
+
+
+        {/* Quality service */}
+        <div className='h-[360px] bg-red-600 -mt-9 mb-7'>
+          <div className='pt-[50px] pl-[250px] flex'>
+            <div className='flex flex-col'>
+              <span className='text-white text-3xl font-bold'>Quality Service And <br /> customer Satisfaction  !!</span>
+              <span className='max-w-[500px] text-white pt-6 text-sm break-words'>We utlize the most recent symtomatic gear to ensur your vechile is fixed or adjusted appropriatley and in an opportune manner. We are an individual from Proffesional Auto servoce, a first classs excution of arrange, where free assistance offices share objective of being world-class car adminstration focuses.</span>
+            </div>
+            <div className='-mt-12.5'>
+              <img src={radar} alt="radar image" />
+            </div>
+          </div>
+
+        </div>
+
+
+        {/* why choose us */}
+        <div className='h-[500px]'>
+          <div className='pl-[190px] pt-[60px]'>
+            <div className=' flex gap-4'>
+              <span className='text-3xl'>Why Choose Us</span>
+              <div className='border-red-600 border-b-2 w-10'></div>
+              
+            </div>
+            <div className='mt-6 text-sm text-gray-600'>
+              <span className='pt-7'>Bring to the table win-win surviaval stratagies to insure proactive domination. <br />At the end of the day,going forward, a new normal that has evolved from <br /> generation heading towards. </span>
+            </div>
+          </div>
+          <div></div>
+        </div>
 
       </div>
       <Footer/>
