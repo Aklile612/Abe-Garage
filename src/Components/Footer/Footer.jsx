@@ -59,11 +59,11 @@ const Footer = () => {
 
         <div className='mt-[50px] flex gap-16'>
           <div className=' ml-[150px] mt-[50px] max-w-[400px] break-words'>
-            <span className='text-white text-sm '>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide additional clickthroughs</span>
+            <span className='text-gray-500 text-sm '>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide additional clickthroughs</span>
           </div>
           <div>
             <h2 className='text-white font-bold'>Usefull Links</h2>
-            <div className='flex flex-col text-white text-sm gap-3 '>
+            <div className='flex flex-col text-gray-500 text-sm gap-3 '>
               <Link className='pt-[30px]'>Home</Link>
               <Link>About Us</Link>
               <Link>Appointment</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
           <div>
             <h2 className='text-white font-bold'>Our Services</h2>
-            <div className='flex flex-col text-white text-sm gap-3'>
+            <div className='flex flex-col text-gray-500 text-sm gap-3'>
               <Link className='pt-[30px]'>Performance Upgrade </Link>
               <Link>Transmission Service </Link>
               <Link>Break Repair & Service </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
             <h2 className='text-white font-bold'>Newsletter</h2>
             <div className='pt-[30px]'>
 
-              <span className='text-white text-sm '>Get Letest Update And Offer</span>
+              <span className='text-gray-500 text-sm '>Get Letest Update And Offer</span>
             </div>
             <div className='flex pt-[10px] gap-5 text-white text-4xl'>
               <CiFacebook />
