@@ -19,6 +19,8 @@ import ten from "../../assets/10.png"
 import radar from "../../assets/radar.png"
 import oldies from "../../assets/oldies.png"
 import { FaPlayCircle } from "react-icons/fa";
+import { IoArrowForwardOutline } from "react-icons/io5";
+
 const Home = () => {
   return (
     <>
@@ -65,6 +67,9 @@ const Home = () => {
               <h2 className='text-center mt-3'>
                 <span className=''>ABOUT US</span>
               </h2>
+              <div className='pt-2.5 pl-3 text-[17px] '>
+                <IoArrowForwardOutline className=''/>
+              </div>
             </Link>
           </div>
         </div>
