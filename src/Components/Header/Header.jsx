@@ -38,7 +38,7 @@ const Header = () => {
                 <Link to="/service"><span className='font-extrabold text-sm cursor-pointer'>SERVICES</span></Link>
                 <Link to="/contactus"><span className='font-extrabold text-sm cursor-pointer'>CONTACT US</span></Link>
                 <div className='border-gray-400 border-l-2 h-4 mx-7 cursor-pointer'></div>
-                <Link to="/signin" className="-mt-4.5 font-bold text-xs text-center bg-red-600 w-[90px] h-[50px] flex items-center justify-center text-white cursor-pointer">
+                <Link to="/login" className="-mt-4.5 font-bold text-xs text-center bg-red-600 w-[90px] h-[50px] flex items-center justify-center text-white cursor-pointer">
                     SIGN IN
                 </Link>
             </div>
