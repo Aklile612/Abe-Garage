@@ -5,6 +5,7 @@ import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
 import Service from './Components/ServicesPage/Service'
 import AboutUs from './Components/About Us/AboutUs'
+import Contact from './Components/Contact Us/Contact'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/service' element={<Service/>}/>
           <Route path='/aboutus' element={<AboutUs/>}/>
+          <Route path='/contactus' element={<Contact/>}/>
         </Routes>
       </>
    
