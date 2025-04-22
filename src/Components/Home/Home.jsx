@@ -18,6 +18,7 @@ import ten from "../../assets/10.png"
 
 import radar from "../../assets/radar.png"
 import oldies from "../../assets/oldies.png"
+import { FaPlayCircle } from "react-icons/fa";
 const Home = () => {
   return (
     <>
@@ -34,6 +35,14 @@ const Home = () => {
                       <div className='border-red-600 border-b-2 -pt-7 w-7' ></div>
                     </div>
                     <span className='text-5xl font-bold max-w-[400px] break-words'>Tune up Your Car to next level</span>
+                </div>
+                <div className='flex gap-5'>
+                  <div className='pt-5 text-6xl text-red-600 pl-2 '>
+                    <FaPlayCircle  />
+                  </div >
+                  <div className='pt-5'>
+                    <span className='text-xs font-semibold'>WATCH INTO VIDEO <br /> ABOUT US</span>
+                  </div>
                 </div>
             </div>
         </div>
