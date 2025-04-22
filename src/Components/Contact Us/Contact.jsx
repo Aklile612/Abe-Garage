@@ -5,6 +5,10 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 import service from "../../assets/service-hero.jpeg"
 import map from "../../assets/map.png"
 import { CiLocationOn } from 'react-icons/ci'
+import { TfiEmail } from 'react-icons/tfi'
+import { FiPhone } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import { IoArrowForwardOutline } from 'react-icons/io5'
 const Contact = () => {
   return (
     <>
@@ -40,22 +44,60 @@ const Contact = () => {
                     <span className='text-lg text-blue-950 font-bold'>Our Address</span>
                     <span className='text-gray-500'>Completely synergize resource taxing relationships <br />via premier niche markets. Professionally cultivate <br />one-to-one customer service</span>
                 </div>
-                <div>
-                <div className=' flex'>
-                    <div> 
-                        <CiLocationOn className='text-red-800 text-5xl ' />
-                    </div>
-                    <div className='flex flex-col gap-1'>
+                <div className='flex flex-col gap-5'>
+                    <div className=' flex gap-5'>
+                        <div className=''> 
+                            <CiLocationOn className='text-red-800 text-5xl ' />
+                        </div>
+                        <div className='flex flex-col '>
 
-                        <span>Address</span>
-                        <span className='pt-2 font-bold text-sm '> 54B, Tailstoi Town 5238 MT, La city, IA 522364</span>
+                            <span className='text-blue-950 text-lg font-bold'>Address</span>
+                            <span className='pt-2 font-bold text-sm -mt-1.5 '> 54B, Tailstoi Town 5238 MT, La city, IA 522364</span>
+                        </div>
+                        
                     </div>
-                    
-                </div>
+                    <div className='flex  gap-7'>
+                        <div className=' '>
+        
+                            <TfiEmail className='text-red-800 text-4xl  '  />
+                        </div>
+                        <div className='flex flex-col'>
+                        <span className=' text-blue-950 text-lg font-bold '>Email us:</span>
+                        <span className=' text-sm font-bold'>Contact us@autorex.com</span>
+                        </div>
+                    </div>
+                    <div className='flex gap-7'>
+                        <div className=''>
+                            <FiPhone className='text-red-800 text-4xl ' />
+                        </div>
+                        <div className='flex flex-col'>
+                            <span className=' text-blue-950  text-lg font-bold'>call us on:</span>
+                            <span className=' text-md font-bold'>+1908 2442 9042</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
 
+        {/* schedule appointment */}
+        <div className='w-[870px] h-[130px] ml-[250px] mt-30 mb-20 bg-red-600'>
+          <div className='flex gap-9'>
+            <div className='font-bold text-white flex flex-col pt-8 pl-9'>
+              <span className='text-2xl'>Schedule Your Appointment Today</span>
+              <span className='text-sm'>Your automotive Repair & Maintainace service specialist</span>
+            </div>
+            <div className='pt-8 flex'>
+              <span className='font-bold text-3xl text-white'>1800.358.2340</span>
+              <Link to="/contactus" className=' group hover:scale-110 ease-out transition-all ml-7 w-[160px]  bg-red-50 text-sm flex justify-center items-center h-14 -mt-2'>
+                <span className='font-bold -ml-5'> CONTACT US </span>
+                <div className=' pl-3 text-[17px] '>
+                  <IoArrowForwardOutline className=''/>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
 
 
 
