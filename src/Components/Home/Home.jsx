@@ -270,6 +270,9 @@ const Home = () => {
               <span className='font-bold text-3xl text-white'>1800.358.2340</span>
               <Link className=' group hover:scale-110 ease-out transition-all ml-7 w-[160px]  bg-red-50 text-sm flex justify-center items-center h-14 -mt-2'>
                 <span className='font-bold -ml-5'> CONTACT US </span>
+                <div className=' pl-3 text-[17px] '>
+                  <IoArrowForwardOutline className=''/>
+                </div>
               </Link>
             </div>
           </div>
