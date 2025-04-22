@@ -65,7 +65,7 @@ const Home = () => {
             <br />
             Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing. </span>
 
-            <Link  className='group hover:scale-110 transition-all ease-out w-[120px] flex text-center justify-center h-10 mt-2 bg-[#EE0D09] text-white font-bold text-xs'>
+            <Link to="/aboutus"  className='group hover:scale-110 transition-all ease-out w-[120px] flex text-center justify-center h-10 mt-2 bg-[#EE0D09] text-white font-bold text-xs'>
               <h2 className='text-center mt-3'>
                 <span className=''>ABOUT US</span>
               </h2>
