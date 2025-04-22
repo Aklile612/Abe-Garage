@@ -52,11 +52,11 @@ const Home = () => {
             <br />
             Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing. </span>
 
-            <div className='w-[120px] flex text-center justify-center h-10 mt-2 bg-[#EE0D09] text-white font-bold text-xs'>
-              <Link className='text-center mt-3'>
+            <Link  className='group hover:scale-110 transition-all ease-out w-[120px] flex text-center justify-center h-10 mt-2 bg-[#EE0D09] text-white font-bold text-xs'>
+              <h2 className='text-center mt-3'>
                 <span className=''>ABOUT US</span>
-              </Link>
-            </div>
+              </h2>
+            </Link>
           </div>
         </div>
 
@@ -239,6 +239,27 @@ const Home = () => {
           </div>
         </div>
 
+
+
+        {/* we are leader */}
+
+
+
+        {/* schedule appointment */}
+        <div className='w-[870px] h-[130px] ml-[250px] my-10 mb-20 bg-red-600'>
+          <div className='flex gap-9'>
+            <div className='font-bold text-white flex flex-col pt-8 pl-9'>
+              <span className='text-2xl'>Schedule Your Appointment Today</span>
+              <span className='text-sm'>Your automotive Repair & Maintainace service specialist</span>
+            </div>
+            <div className='pt-8 flex'>
+              <span className='font-bold text-3xl text-white'>1800.358.2340</span>
+              <Link className=' group hover:scale-110 ease-out transition-all ml-7 w-[160px]  bg-red-50 text-sm flex justify-center items-center h-14 -mt-2'>
+                <span className='font-bold -ml-5'> CONTACT US </span>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer/>
     </>
