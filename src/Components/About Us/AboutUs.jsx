@@ -13,7 +13,7 @@ import eight from "../../assets/8.png"
 import nine from "../../assets/9.png"
 import ten from "../../assets/10.png"
 import tires from "../../assets/tires.png"
-import radar from "../../assets/radar.png"
+
 import oldies from "../../assets/oldies.png"
 import { FaPlayCircle } from "react-icons/fa";
 
