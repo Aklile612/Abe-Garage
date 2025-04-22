@@ -15,7 +15,7 @@ import seven from "../../assets/7.png"
 import eight from "../../assets/8.png"
 import nine from "../../assets/9.png"
 import ten from "../../assets/10.png"
-
+import tires from "../../assets/tires.png"
 import radar from "../../assets/radar.png"
 import oldies from "../../assets/oldies.png"
 import { FaPlayCircle } from "react-icons/fa";
@@ -25,6 +25,8 @@ const Home = () => {
   return (
     <>
       <Header/>
+
+
       <div className=' '>
 
         {/* hero section */}
@@ -256,7 +258,26 @@ const Home = () => {
 
 
         {/* we are leader */}
-
+        <div className='w-full relative my-8' >
+            <img src={tires} alt="Hero Section" className='w-full object-cover h-[400px] -z-40  '/>
+            <div className='absolute top-1/3 left-[100px]  text-white  '>
+                <div className='flex flex-col gap-5'>
+                    <div className='flex gap-4'>
+                      <span className='text-sm'>Working Since 1992 </span>
+                      <div className='border-red-600 border-b-2 -pt-7 w-7' ></div>
+                    </div>
+                    <span className='text-5xl font-bold  break-words'>We are leader <br /> in Car Mechanichal Work</span>
+                </div>
+                <div className='flex gap-5'>
+                  <div className='pt-5 text-6xl text-red-600 pl-2 '>
+                    <FaPlayCircle  />
+                  </div >
+                  <div className='pt-5'>
+                    <span className='text-xs font-semibold'>WATCH INTO VIDEO <br /> ABOUT US</span>
+                  </div>
+                </div>
+            </div>
+        </div>
 
 
         {/* schedule appointment */}
@@ -278,6 +299,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+
       <Footer/>
     </>
   )
