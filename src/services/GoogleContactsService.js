@@ -258,3 +258,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact birthday reminders 5
 // feat: add contact birthday reminders 6
 // feat: add contact birthday reminders 7
+// style: standardize screen padding values 1
