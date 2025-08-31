@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Abe Garage",
+    "slug": "abe-garage",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#1a73e8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abegarage.contacts"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a73e8"
+      },
+      "package": "com.abegarage.contacts",
+      "permissions": ["READ_CONTACTS", "WRITE_CONTACTS"]
+    },
+    "plugins": [
+      "expo-contacts"
+    ]
+  }
+}
