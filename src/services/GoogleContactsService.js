@@ -205,3 +205,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add onboarding intro screens 4
 // feat: add onboarding intro screens 5
 // feat: add onboarding intro screens 6
+// feat: add onboarding intro screens 7
