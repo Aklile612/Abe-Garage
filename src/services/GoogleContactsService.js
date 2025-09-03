@@ -201,3 +201,4 @@ export async function searchContacts(accessToken, query) {
 // style: standardize input field heights 7
 // feat: add onboarding intro screens 1
 // feat: add onboarding intro screens 2
+// feat: add onboarding intro screens 3
