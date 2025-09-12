@@ -170,3 +170,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add favorites section to contacts 8
 // feat: add favorites section to contacts 9
 // style: refine card elevation and shadows 1
+// style: refine card elevation and shadows 2
