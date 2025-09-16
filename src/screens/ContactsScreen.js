@@ -1,48 +1,65 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   Text,
   FlatList,
   StyleSheet,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import { Colors, Spacing } from "../constants/colors";
+import ContactCard from "../components/ContactCard";
+import SearchBar from "../components/SearchBar";
+import EmptyState from "../components/EmptyState";
+import { useContacts } from "../services/ContactsContext";
 
 export default function ContactsScreen({ navigation }) {
-  const [contacts] = useState([
-    { id: "1", name: "Sample Contact", phone: "+251911111111" },
-  ]);
+  const { contacts, loadContacts, deleteContact } = useContacts();
+  const [search, setSearch] = useState("");
 
-  const renderContact = ({ item }) => (
-    <TouchableOpacity style={styles.contactCard}>
-      <View style={styles.avatar}>
-        <Text style={styles.avatarText}>
-          {item.name.charAt(0).toUpperCase()}
-        </Text>
-      </View>
-      <View style={styles.contactInfo}>
-        <Text style={styles.contactName}>{item.name}</Text>
-        <Text style={styles.contactPhone}>{item.phone}</Text>
-      </View>
-    </TouchableOpacity>
-  );
+  useEffect(() => {
+    loadContacts();
+  }, []);
+
+  const filtered = contacts.filter((c) => {
+    if (!search) return true;
+    const q = search.toLowerCase();
+    return (
+      c.name?.toLowerCase().includes(q) ||
+      c.phone?.includes(q)
+    );
+  });
+
+  const handleLongPress = (contact) => {
+    Alert.alert(
+      "Delete Contact",
+      `Remove ${contact.name}?`,
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: () => deleteContact(contact.id),
+        },
+      ]
+    );
+  };
 
   return (
     <View style={styles.container}>
-      {contacts.length === 0 ? (
-        <View style={styles.empty}>
-          <Text style={styles.emptyText}>No contacts yet</Text>
-          <TouchableOpacity
-            style={styles.addButton}
-            onPress={() => navigation.navigate("AddContact")}
-          >
-            <Text style={styles.addButtonText}>Add Your First Contact</Text>
-          </TouchableOpacity>
-        </View>
+      <SearchBar value={search} onChangeText={setSearch} />
+      {filtered.length === 0 ? (
+        <EmptyState
+          icon="📇"
+          title={search ? "No results found" : "No contacts yet"}
+          message={search ? "Try a different search term" : "Add your first contact to get started"}
+        />
       ) : (
         <FlatList
-          data={contacts}
-          renderItem={renderContact}
+          data={filtered}
+          renderItem={({ item }) => (
+            <ContactCard contact={item} onLongPress={handleLongPress} />
+          )}
           keyExtractor={(item) => item.id}
           contentContainerStyle={styles.list}
         />
@@ -53,39 +70,5 @@ export default function ContactsScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: Colors.background },
-  list: { padding: Spacing.md },
-  empty: { flex: 1, justifyContent: "center", alignItems: "center" },
-  emptyText: { fontSize: 18, color: Colors.textSecondary, marginBottom: Spacing.md },
-  addButton: {
-    backgroundColor: Colors.primary,
-    paddingHorizontal: 24,
-    paddingVertical: 12,
-    borderRadius: 8,
-  },
-  addButtonText: { color: Colors.white, fontWeight: "bold" },
-  contactCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: Colors.white,
-    borderRadius: 12,
-    padding: Spacing.md,
-    marginBottom: Spacing.sm,
-    shadowColor: Colors.black,
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.08,
-    shadowRadius: 3,
-    elevation: 2,
-  },
-  avatar: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    backgroundColor: Colors.primary,
-    justifyContent: "center",
-    alignItems: "center",
-    marginRight: Spacing.md,
-  },
-  avatarText: { color: Colors.white, fontSize: 20, fontWeight: "bold" },
-  contactName: { fontSize: 16, fontWeight: "600", color: Colors.text },
-  contactPhone: { fontSize: 14, color: Colors.textSecondary, marginTop: 2 },
+  list: { padding: Spacing.md, paddingTop: 0 },
 });
