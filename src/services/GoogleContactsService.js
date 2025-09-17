@@ -255,3 +255,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact birthday reminders 2
 // feat: add contact birthday reminders 3
 // feat: add contact birthday reminders 4
+// feat: add contact birthday reminders 5
