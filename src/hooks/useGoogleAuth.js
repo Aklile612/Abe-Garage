@@ -1,1 +1,1 @@
-// useContacts hook
+// useGoogleAuth hook
