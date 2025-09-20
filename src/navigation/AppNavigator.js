@@ -5,6 +5,7 @@ import HomeScreen from "../screens/HomeScreen";
 import AddContactScreen from "../screens/AddContactScreen";
 import ContactsScreen from "../screens/ContactsScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import SyncScreen from "../screens/SyncScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,11 @@ export default function AppNavigator() {
         name="Settings"
         component={SettingsScreen}
         options={{ title: "Settings" }}
+      />
+      <Stack.Screen
+        name="Sync"
+        component={SyncScreen}
+        options={{ title: "Sync Contacts" }}
       />
     </Stack.Navigator>
   );
