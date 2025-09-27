@@ -225,3 +225,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact backup to cloud 5
 // feat: add contact backup to cloud 6
 // style: refine bottom sheet animations 1
+// style: refine bottom sheet animations 2
