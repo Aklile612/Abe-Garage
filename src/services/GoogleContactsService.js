@@ -249,3 +249,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact search by email 3
 // feat: add contact search by email 4
 // feat: add contact search by email 5
+// feat: add contact search by email 6
