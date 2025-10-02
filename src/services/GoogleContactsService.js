@@ -162,3 +162,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact import from device 9
 // feat: add favorites section to contacts 1
 // feat: add favorites section to contacts 2
+// feat: add favorites section to contacts 3
