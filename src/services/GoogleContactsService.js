@@ -168,3 +168,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add favorites section to contacts 6
 // feat: add favorites section to contacts 7
 // feat: add favorites section to contacts 8
+// feat: add favorites section to contacts 9
