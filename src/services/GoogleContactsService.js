@@ -194,3 +194,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add recent calls section 7
 // style: standardize input field heights 1
 // style: standardize input field heights 2
+// style: standardize input field heights 3
