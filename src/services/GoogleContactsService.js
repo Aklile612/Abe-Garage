@@ -67,3 +67,4 @@ export async function searchContacts(accessToken, query) {
 // sync opt 3
 // sync opt 4
 // sync opt 5
+// sync opt 6
