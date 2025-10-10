@@ -62,3 +62,4 @@ export async function searchContacts(accessToken, query) {
   const data = await response.json();
   return data.results || [];
 }
+// sync opt 1
