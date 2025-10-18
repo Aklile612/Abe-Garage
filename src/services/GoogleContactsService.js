@@ -237,3 +237,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add emergency contact quick dial 5
 // feat: add emergency contact quick dial 6
 // feat: add emergency contact quick dial 7
+// refactor: simplify contact storage logic 1
