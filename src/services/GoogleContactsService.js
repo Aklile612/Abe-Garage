@@ -242,3 +242,4 @@ export async function searchContacts(accessToken, query) {
 // refactor: simplify contact storage logic 3
 // refactor: simplify contact storage logic 4
 // refactor: simplify contact storage logic 5
+// refactor: simplify contact storage logic 6
