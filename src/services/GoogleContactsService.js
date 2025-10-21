@@ -140,3 +140,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact avatar color customization 4
 // feat: add contact avatar color customization 5
 // feat: add contact avatar color customization 6
+// feat: add contact avatar color customization 7
