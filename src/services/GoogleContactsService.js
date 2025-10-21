@@ -136,3 +136,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact group management screen 12
 // feat: add contact avatar color customization 1
 // feat: add contact avatar color customization 2
+// feat: add contact avatar color customization 3
