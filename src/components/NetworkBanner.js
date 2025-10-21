@@ -1,0 +1,1 @@
+// Network banner component
