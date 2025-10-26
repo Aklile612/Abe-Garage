@@ -222,3 +222,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact backup to cloud 2
 // feat: add contact backup to cloud 3
 // feat: add contact backup to cloud 4
+// feat: add contact backup to cloud 5
