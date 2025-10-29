@@ -156,3 +156,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact import from device 3
 // feat: add contact import from device 4
 // feat: add contact import from device 5
+// feat: add contact import from device 6
