@@ -152,3 +152,4 @@ export async function searchContacts(accessToken, query) {
 // refactor: extract contact list into reusable hook 8
 // refactor: extract contact list into reusable hook 9
 // feat: add contact import from device 1
+// feat: add contact import from device 2
