@@ -185,3 +185,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact export to vcf format 5
 // feat: add contact export to vcf format 6
 // feat: add contact export to vcf format 7
+// feat: add recent calls section 1
