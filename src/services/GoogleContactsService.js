@@ -188,3 +188,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add recent calls section 1
 // feat: add recent calls section 2
 // feat: add recent calls section 3
+// feat: add recent calls section 4
