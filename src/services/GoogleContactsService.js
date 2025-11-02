@@ -265,3 +265,4 @@ export async function searchContacts(accessToken, query) {
 // style: standardize screen padding values 5
 // style: standardize screen padding values 6
 // style: standardize screen padding values 7
+// feat: add contact notes rich text 1
