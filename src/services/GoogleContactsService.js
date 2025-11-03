@@ -271,3 +271,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact notes rich text 4
 // feat: add contact notes rich text 5
 // feat: add contact notes rich text 6
+// feat: add contact notes rich text 7
