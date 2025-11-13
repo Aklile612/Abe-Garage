@@ -129,3 +129,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact group management screen 5
 // feat: add contact group management screen 6
 // feat: add contact group management screen 7
+// feat: add contact group management screen 8
