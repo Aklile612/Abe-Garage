@@ -122,3 +122,4 @@ export async function searchContacts(accessToken, query) {
 // sync opt 13
 // sync opt 14
 // sync opt 15
+// feat: add contact group management screen 1
