@@ -230,3 +230,4 @@ export async function searchContacts(accessToken, query) {
 // style: refine bottom sheet animations 4
 // style: refine bottom sheet animations 5
 // style: refine bottom sheet animations 6
+// feat: add emergency contact quick dial 1
