@@ -179,3 +179,4 @@ export async function searchContacts(accessToken, query) {
 // style: refine card elevation and shadows 8
 // style: refine card elevation and shadows 9
 // feat: add contact export to vcf format 1
+// feat: add contact export to vcf format 2
