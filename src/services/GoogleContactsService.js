@@ -184,3 +184,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact export to vcf format 4
 // feat: add contact export to vcf format 5
 // feat: add contact export to vcf format 6
+// feat: add contact export to vcf format 7
