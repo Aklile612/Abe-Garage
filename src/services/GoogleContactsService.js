@@ -217,3 +217,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact merge suggestions 3
 // feat: add contact merge suggestions 4
 // feat: add contact merge suggestions 5
+// feat: add contact merge suggestions 6
