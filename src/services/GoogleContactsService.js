@@ -143,3 +143,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add contact avatar color customization 7
 // feat: add contact avatar color customization 8
 // refactor: extract contact list into reusable hook 1
+// refactor: extract contact list into reusable hook 2
