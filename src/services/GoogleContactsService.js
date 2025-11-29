@@ -149,3 +149,4 @@ export async function searchContacts(accessToken, query) {
 // refactor: extract contact list into reusable hook 5
 // refactor: extract contact list into reusable hook 6
 // refactor: extract contact list into reusable hook 7
+// refactor: extract contact list into reusable hook 8
