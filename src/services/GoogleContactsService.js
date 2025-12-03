@@ -211,3 +211,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add push notification preferences 3
 // feat: add push notification preferences 4
 // feat: add push notification preferences 5
+// feat: add push notification preferences 6
