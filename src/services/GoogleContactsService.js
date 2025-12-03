@@ -208,3 +208,4 @@ export async function searchContacts(accessToken, query) {
 // feat: add onboarding intro screens 7
 // feat: add push notification preferences 1
 // feat: add push notification preferences 2
+// feat: add push notification preferences 3
